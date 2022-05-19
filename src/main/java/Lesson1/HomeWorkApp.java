@@ -23,12 +23,20 @@ public class HomeWorkApp {
         compareNumbers(-40, 7);
     }
 
-    private static void compareNumbers(int a, int b) {
-        if (a >= b) {
-            System.out.println("a >= b");
+    static void printThreeWords() {
+        System.out.println("Orange");
+        System.out.println("Banana");
+        System.out.println("Apple");
+    }
+
+    private static void checkSumSign(int a, int b) {
+//        System.out.println(a+b);
+        if ((a + b) < 0) {
+            System.out.println("Сумма отрицательная");
         } else {
-            System.out.println("a < b");
+            System.out.println("Сумма положительная");
         }
+
     }
 
     private static void printColor(int a) {
@@ -41,21 +49,18 @@ public class HomeWorkApp {
         }
     }
 
-    private static void checkSumSign(int a, int b) {
-//        System.out.println(a+b);
-
-        if ((a + b) < 0) {
-            System.out.println("Сумма отрицательная");
+    private static void compareNumbers(int a, int b) {
+        if (a >= b) {
+            System.out.println("a >= b");
         } else {
-            System.out.println("Сумма положительная");
+            System.out.println("a < b");
         }
-
     }
 
-    static void printThreeWords() {
-        System.out.println("Orange");
-        System.out.println("Banana");
-        System.out.println("Apple");
-    }
+
+
+
+
+
 
 }
