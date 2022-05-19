@@ -7,8 +7,8 @@ public class HomeWorkApp3 {
 
         int[] dz1 = MakeRandomArray(0, 1, 10);                                // Инициализируем целочисленный массив
         PrintArray(dz1);                                                      // вывод массива
-        dz1 = InvertArray(dz1);                                               // инвертирование значение массива
-        PrintArray(dz1);
+        PrintArray(InvertArray(dz1));                                               // инвертирование значение массива
+
 
         //Задание 2
 
@@ -46,7 +46,7 @@ public class HomeWorkApp3 {
 
         //Задание 7
 
-        int[] dz7 = {3, 1,1,1};
+        int[] dz7 = {3, 1, 1, 1};
         //int[] dz7 = MakeRandomArray(-100, 100, 4);
         PrintArray(dz7);
         CheckSumArray(dz7);
@@ -67,7 +67,7 @@ public class HomeWorkApp3 {
         int sumA = 0;
         int sumB = 0;
 
-        boolean trig=false;
+        boolean trig = false;
 
         for (int i = 0; i < (arr.length); i++) {
 
@@ -75,7 +75,7 @@ public class HomeWorkApp3 {
 
             //System.out.println("Сумма А= " + sumA);
 
-            for (int j = arr.length-1; j>0; j--) {
+            for (int j = arr.length - 1; j > 0; j--) {
 
                 sumB = sumB + arr[j];
 
@@ -83,7 +83,7 @@ public class HomeWorkApp3 {
 
                 if (sumA == sumB) {
                     System.out.println("A=" + sumA + " B=" + sumB);
-                    trig=true;
+                    trig = true;
                 }
 
             }
